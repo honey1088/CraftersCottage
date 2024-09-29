@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhokra craft</title>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: border-box;
+        }
+    
+        body {
+            background-color: rgb(240, 227, 209);
+        }
+    
+        .border {
+            border: 2px solid transparent;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            padding-left: 10px;
+            padding-right: 10px;
+            cursor: pointer;
+        }
+    
+        .border:hover {
+            border: 2px solid orange;
+        }
+    
+        .announcement {
+            height: 27px;
+            background-color: #9e0150;
+            width: 100%;
+            color: #fff;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    
+        #announcement-text {
+            font-size: 14px;
+        }
+    
+        .navbar {
+            position: absolute;
+            margin-right: 45%;
+            margin-left: 0;
+        }
+    
+    
+        .nav-options {
+            display: flex;
+            height: 28px;
+            list-style-type: none;
+            padding-top: 40px;
+        }
+    
+        .option {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 11px;
+            padding-right: 11px;
+            margin: 20.1px;
+            font-size: 22px;
+            text-decoration: none;
+            color: black
+        }
+    
+        .login {
+            position: absolute;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-left: 78%;
+            margin-right: 0;
+            padding-top: 30px;
+            font-size: 22px;
+        }
+    
+        .nav-sign {
+            margin-right: 8px;
+            margin-left: 8px;
+        }
+    
+        .search-icon {
+            margin-right: 8px;
+            margin-left: 8px;
+        }
+    
+        .nav-cart {
+            margin-right: 8px;
+            margin-left: 8px;
+        }
+    
+        .border1 {
+            border: 2px solid transparent;
+            padding-top: 13px;
+            padding-bottom: 13px;
+            padding-left: 14px;
+            padding-right: 14px;
+            cursor: pointer;
+        }
+    
+        .border1:hover {
+            border: 2px solid orange;
+        }
+    
+        .heading {
+            text-align: center;
+            font-size: 50px;
+            margin-top: 30px;
+        }
+    
+        .footer-content {
+            position: absolute;
+            background-color: black;
+            width: 100%;
+            height: 300px;
+            justify-content: space-evenly;
+            color: white;
+        }
+    
+        .footer-name {
+            position: absolute;
+            margin-top: 100px;
+            margin-left: 80px;
+            margin-bottom: 60px;
+        }
+    
+        .contact-info {
+            position: absolute;
+            margin: 80px;
+            margin-top: 160px;
+        }
+    
+        .quick-links {
+            position: absolute;
+            margin-left: 60%;
+            margin-top: 100px;
+        }
+    
+        .footer-links {
+            list-style-type: none;
+            font-size: 18px;
+        }
+    
+        .social-media {
+            position: absolute;
+            margin-left: 80%;
+            margin-top: 100px;
+        }
+    
+        .copyright {
+            position: absolute;
+            margin-left: 40%;
+            margin-top: 270px;
+        }
+    
+        .social {
+            color: rgb(94, 3, 94);
+            font-size: 18px;
+        }
+    
+        h2 {
+            font-size: 50px;
+            color: rgb(2, 90, 2);
+            margin-bottom: 20px;
+            margin-top: 7%;
+            text-align: center;
+        }
+    
+        .text {
+            font-size: 22px;
+            color: black;
+            margin-left: 70px;
+            margin-right: 70px;
+        }
+    
+        .images {
+            margin-top: 40px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    
+        img {
+            margin: 30px;
+        }
+    
+        h1 {
+            font-size: 48px;
+            color: rgb(10, 98, 133);
+            margin-bottom: 20px;
+            margin-top: 50px;
+            margin-left: 80px;
+            text-align: left;
+        }
+    
+        .text1 {
+            font-size: 28px;
+            color: rgb(240, 111, 6);
+            margin-left: 70px;
+            margin-right: 70px;
+        }
+    
+        .new-text {
+            text-align: center;
+            font-size: 25px;
+            margin-top: 10px;
+        }
+    
+        .new-content {
+            display: inline-flex;
+            text-align: center;
+            margin-top: 60px;
+            margin-left: 48px;
+            margin-right: 48px;
+            margin-bottom: 40px;
+            font-size: 19px;
+        }
+    
+        .new-images {
+            cursor: pointer;
+            margin-right: 35px;
+            margin-left: 35px;
+        }
+    
+        .obj-name,
+        .price {
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+    
+        .new-view {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding-bottom: 25px;
+        }
+    </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="announcement">
+                <p id="announcement-text">10% off + free shipping on orders above Rs 5000</p>
+            </div>
+        </header>
+
+
+        <div class="nav">
+            <div class="navbar">
+                <ul class="nav-options">
+                    <li><a href="artisan.html" class="option border">Home</a></li>
+                    <li><a href="story.html" class="option border">Our Story</a></li>
+                    <li><a href="shop.html" class="option border">Shop</a></li>
+                    <li><a href="contactfinal.html" class="option border">Contact</a></li>
+                    <li><a href="offers.html" class="option border">Offers</a></li>
+                </ul>
+            </div>
+            <div class="login">
+                <div class="nav-sign">
+                    <a href="signin.html" class=" option1 border1">Login</a>
+                </div>
+
+                <div class="search-icon border1">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+
+                <div class="nav-cart border1">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    Cart
+                </div>
+            </div>
+        </div>
+
+        <h2>Dhokra Craft Form</h2>
+        <div class="text">
+            <p>Jharkhand, the state of Eastern Indian is known for its beautiful waterfalls, elegant Jain temples, rich mineral resources, eye-catching water bodies surrounded by hills, forests and woodlands. Most importantly Jharkhand is famous for its ancient handicraft of Dhokra which is an art form handed down through the generations. The talented tribal women artisans can make valuable contributions to the national society’s knowledge of  socio-economic adaptations to fragile eco-systems.</p>
+
+            <br>
+            <p>The journey of the tribal women artisans of the Indian state of Jharkhand, is a story of determination, perseverance, and dedication to their age-old artistic traditions.  They are adept in art like metal ware, wood ware, bamboo craft, hand-printed textiles, hand-knotted and embroidered textiles, leather goods, stoneware, carpets and floor coverings etc. Madhubani and Sohrai paintings are one of the most refined forms of paintings known worldwide. </p>
+        </div>
+
+        <div class="images">
+            <img src="images/dhokra/dhokra1.jpeg" alt="Image1" height="500px" width="370px">
+            <img src="images/dhokra/dhokra2.jpeg" alt="Image2" height="500px" width="370px">
+            <img src="images/dhokra/dhokra3.webp" alt="Image3" height="500px" width="370px">
+        </div>
+
+        <h2>Classic Castig Technique</h2>
+        <div class="text">
+            <p>The artists begin the process of creating Dhokra art by collecting clay. This is then combined with Khuda (rice
+                paddy husk) to form a dough. It serves as a binding agent for the clay core, which generally corresponds to the
+                form of the final cast design. Later it is dried in the sun. </p>
+        
+            <p>The second stage is to prepare a combination of bee's wax, Damar (gum/resin) from the tree 'Damara Orientalis,'
+                and nut oil which is then inserted into a mold. When the wax mixture is squeezed into the mold, it emerges in
+                the shape of long strands/spirals. These strands are then wrapped around the Dhokra figures giving them their
+                distinct appearance. The wax is then shaped, and finer features such as the pattern and embellishment are
+                engraved on it. The wax is then coated with numerous layers of red clay and Khuda, which serve as an exterior
+                coat.</p>
+        
+            <p>The brass fragment is then inserted into the mold and then heated in the furnace. The metal and wax melt during
+                this procedure. The wax oozes out of the frame through several outlets which is why it is termed “lost wax”.
+                After that, it is dried in the sun once more. When the metal has dried, it adopts the shape of the frame.
+                Finally, the frame is cracked and the finishing touches are added. Voila! An amazing and unique dhokra piece is
+                ready!
+            </p>
+        </div>
+
+        <div class="dhokra-handicraft">
+            <h1>DHOKRA HANDICRAFTS</h1>
+            <p class="text1">
+                The products made by Dhokra artisans are in great demand in domestic and foreign markets as it is distinguished by their appealing folk patterns, and clean and sharp lines. 
+            </p>
+        </div>
+
+        <div class="new-content">
+            <figure>
+                <a><img src="images/dhokra/dhokra6.webp" alt="Image1" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Dhokra Metal Craft</figcaption>
+                <span class="price">&#8377 4,000</span>
+            </figure>
+            <figure>
+                <a><img src="images/dhokra/dhokra4.webp" alt="Image2" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Dhokra Craft Stationary Stand</figcaption>
+                <span class="price">&#8377 1,400</span>
+            </figure>
+            <figure>
+                <a><img src="images/dhokra/dhokra5.webp" alt="Image3" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Dhokra Craft Towel Hanger - Elephant</figcaption>
+                <span class="price">&#8377 3,080</span>
+            </figure>
+            <figure>
+                <a><img src="images/dhokra/dhokra7.webp" alt="Image4" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Dhokra Craft Curio-Reindeer</figcaption>
+                <span class="price">&#8377 2,450</span>dhokra/
+            </figure>
+        </div>
+
+        <div class="new-content">
+            <figure>
+                <a><img src="images/dhokra/dhokra7.webp" alt="Image5" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Dhokra Craft Curio</figcaption>
+                <span class="price">&#8377 3,000</span>
+            </figure>
+            <figure>
+                <a><img src="images/dhokra/dhokra8.webp" alt="Image6" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Dhokra Metal Horse</figcaption>
+                <span class="price">&#8377  6000</span>
+            </figure>
+            <figure>
+                <a><img src="images/dhokra/dhokra9.webp" alt="Image7" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Dhokra Craft Oil Lamp</figcaption>
+                <span class="price">&#8377 3390</span>
+            </figure>
+            <figure>
+                <a><img src="images/dhokra/dhokra10.webp" alt="Image8" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Dhokra Craft Wall Piece-Key Holder</figcaption>
+                <span class="price">&#8377 1,450</span>
+            </figure>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-name">
+                    <h3>CraftersCottage</h3>
+                </div>
+                <div class="contact-info">
+                    <p>123 Main Street,Delhi,India</p>
+                    <p>Phone: +91 (5678890987)</p>
+                    <a href="mailto:craftcottage12@gmail.com">craftcottage12@gmail.com</a>
+                </div>
+                <div class="quick-links">
+                    <ul class="footer-links">
+                        <li><a href="">Our Story</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <p class="social">Social-Media</p>
+                    <ul class="footer-links">
+                        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook <i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                        <li><a href="https://twitter.com/" target="_blank" rel="noopener">Twitter <i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram <i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">Linkedin <i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.pinterest.com/" target="_blank" rel="noopener">Pinterest <i class="fa fa-pinterest-square" aria-hidden="true"></i></a></li>
+                    </ul>
+            
+                </div>
+                <div class="copyright">
+                <p>&copy; 2023 CraftersCottage. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

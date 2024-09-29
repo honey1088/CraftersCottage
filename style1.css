@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: border-box;
+}
+
+.border{ 
+    border: 2px solid transparent;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.option1{
+    color: black;
+}
+
+a{
+    color:rgb(136, 17, 136); 
+}
+a:hover{
+   color:rgba(4, 199, 199, 0.956);
+}
+
+body{
+    background-color:  rgb(240, 227, 209);;
+}
+
+.border:hover{
+    border: 2px solid orange;
+}
+
+.announcement{
+    height: 27px;
+    background-color: #9e0150;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly ;
+    align-items: center;
+}
+
+#announcement-text{
+    font-size: 14px;
+}
+
+/*-------------------------------------------------panel options with background image---------------------------------*/
+
+.navbar{
+    position: absolute;
+    margin-right: 45%;
+    margin-left:0;
+}
+
+.nav-img{ 
+    background-image: url("main-triangle.jpg");
+    max-width: 100%;
+    height: 890px;
+    background-repeat: no-repeat;
+}
+
+.nav-options{
+    display: flex;
+    height: 28px;
+    list-style-type: none;
+    padding-top: 40px;
+}
+
+.option{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 11px;
+    padding-right: 11px;
+    margin: 20.1px;
+    font-size: 22px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.logo{
+    max-width: 300px;
+    border-radius: 50%;
+    margin-left: 55px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.nav-text{
+    margin-top:30px;
+    margin-right: 80px;
+    margin-left: 80px;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    color:#ffffff;
+    margin-bottom: 30px;
+}
+
+h2{
+    font-size: 50px;
+    color:#ffffff;
+    margin-bottom: 20px;
+}
+
+/*------------------------------------------------------Shop Now button-------------------------------------------------*/
+.shop-button{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.button{
+    margin-top: 5px;
+    padding: 15px 32px;
+    font-size: 20px;
+    border:none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(173, 169, 169);
+    color: black;
+}
+
+.button:hover{
+    border: 2px solid rgb(26, 216, 8);
+    color: rgb(82, 6, 153);
+    background-color: #ffffff;
+}
+
+.explore{
+    background-color: #9e0150;
+}
+
+.explore a{
+    color:rgb(26, 216, 8);
+}
+
+/*----------------------------------------------------Login search box--------------------------------------------------*/
+.login{
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 74%;
+    margin-right: 0;
+    padding-top: 30px;
+    font-size: 22px;
+}
+
+.nav-sign{
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.search-icon{
+    margin-right: 8px;
+    margin-left: 8px;  
+    color: black;  
+}
+
+.nav-return{
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.nav-cart{
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.border1{ 
+    border: 2px solid transparent;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 14px;
+    padding-right: 14px;
+    cursor: pointer;
+}
+
+.border1:hover{
+    border: 2px solid orange;
+}
+
+/*---------------------------------------------------Image slideshow--------------------------------------------------*/
+
+.slideshow-container{
+    max-width: 500px;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 60%;
+}
+
+.slides{
+    display: none;
+    text-align: center;
+}
+
+.Slide-images{
+    width: 100%;
+    max-height: 700px;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next{
+    right: 0px;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*------------------------------------------------------------Our Mission----------------------------------------------*/
+.our-mission{
+    position: relative;
+    margin-top: 65%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.mission-bgimage{
+    background-image: url("images/mission1.jpg");
+    background-position: center;
+    height: 673px;
+    width: 1300px;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+.mission-text{
+    font-size: 30px;
+    text-align: right;
+    margin-right: 54px;
+    margin-left: 100px;
+    margin-top: 20px;
+    color: rgb(20, 20, 179);
+}
+
+.mission-text1{
+    font-size: 25px;
+    text-align: right;
+    margin-right: 54px;
+    margin-left: 40%;
+    margin-top: 20px;
+    color: rgb(190, 21, 106);
+}
+
+.mission-images{
+    display: inline-flex;
+    margin-top: 30px;
+    margin-left: 40%
+}
+
+.fig{
+    margin-left: 40px;
+    margin-right:40px;
+    margin-top: 20px;
+}
+
+.caption{
+    margin-top: 10px;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 35px;
+}
+
+/*-------------------------------------------------------New arrivals section-------------------------------------------*/
+.new-arrivals{
+    position: relative;
+    margin-top: 65%;
+    padding-top: 10px;
+}
+
+.heading{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 35px;
+}
+
+.new-text{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.new-content{
+    display: inline-flex;
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 48px;
+    margin-right: 48px;
+    margin-bottom: 40px;
+    font-size: 19px;
+}
+
+.new-images{
+    cursor: pointer;
+    margin-right: 35px;
+    margin-left: 35px;
+}
+
+.obj-name,.price{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.new-view{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+/*-------------------------------------------------------Explore section-----------------------------------------------*/
+.explore{
+    background-image: url("images/explore.png");
+    height: 350px;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.explore-text{
+    position: absolute;
+    padding-top: 140px;
+    margin-left: 80px;
+    font-size: 38px;
+    margin-bottom: 30px;
+    text-decoration: solid;
+}
+
+.explore-learn{
+    position: absolute;
+    padding-top: 270px;
+    font-size: 24px;
+    margin-left: 80px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.explore-craft{
+    position: absolute;
+    margin-left: 60%;
+    margin-top: 150px;
+    font-size: 60px;
+}
+
+#span2{
+    font-size: 20px;
+}
+
+/*------------------------------------------------------Choices for season--------------------------------------------*/
+.season{
+    position: relative;
+    background-color: antiquewhite;
+    padding-top: 50px;
+}
+
+.heading1{
+    margin-top: 20px;
+    font-size: 35px;
+    margin-left: 83px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.season-text{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 83px;
+    cursor: pointer;
+}
+
+.season-view{
+    position: absolute;
+    margin-left: 82%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+/*-----------------------------------Old art form-------------------------------------*/
+.old-img{
+    margin-top: 18px;
+    margin-left: 50%;
+    position: absolute;
+}
+
+.img{
+    margin: 10px;
+}
+
+.old-text{
+    margin-top: 35px;
+    margin-right: 53%;
+    position: absolute;
+    margin-left: 60px;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(158, 5, 5);
+}
+
+.old-view{
+    position: absolute;
+    margin-left: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 25px;
+    margin-top: 340px;
+}
+
+/*-------------------------------------------------------footer------------------------------------------*/
+.footer-content{
+    position: absolute;
+    margin-top: 35%;
+    background-color: black;;
+    width: 100%;
+    height: 300px;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.footer-name{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 80px;
+    margin-bottom: 60px;
+}
+
+.contact-info{
+    position: absolute;
+    margin: 80px;
+    margin-top: 160px;
+}
+
+.quick-links{
+    position: absolute;
+    margin-left: 60%;
+    margin-top: 100px;
+}
+
+.footer-links{
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.social-media{
+    position: absolute;
+    margin-left: 80%;
+    margin-top: 100px;
+}
+
+.copyright{
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 270px;
+}
+
+.social{
+    color:rgb(94, 3, 94);
+    font-size: 18px;
+}

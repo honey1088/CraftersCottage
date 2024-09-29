@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style1.css" />
+  </head>
+  <style>
+    .abcd {
+      color: black;
+    }
+    .ef {
+      font-size: 25px;
+    }
+    .h {
+      color: white;
+      background-color: burlywood;
+      font-size: 75px;
+      margin-top: 0%;
+    }
+    .g {
+      size: 50px;
+    }
+    .m {
+      font-size: 20px;
+    }
+  </style>
+  <center><h1 class="h">CraftersCottage</h1></center>
+  <center><img src="images/logo.png" alt="Image" /></center>
+  <body class="ef">
+    <center>
+        <form method="get" class="login-form" action="artisan.html">
+            <h1>Log in</h1>
+    
+            <label for="email" class="label">Email ID:</label>
+            <input
+              type="email"
+              class="input"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            /><br /><br />
+    
+            <label for="password" class="label">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="input"
+              placeholder="Enter your password"
+              required
+            /><br /><br />
+    
+            <input type="submit" class="button" value="Log In" />
+            <input type="reset" class="button" value="Reset" />
+        </form>
+        
+        <p class="new-user-text">
+            New Here? <a href="register.html" class="link">Create your account</a>
+        </p>
+    </center>    
+  </body>
+</html>

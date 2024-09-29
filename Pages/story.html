@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <title>Our Story</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: border-box;
+        }
+
+        a{
+            color:rgb(136, 17, 136); 
+        }
+        a:hover{
+            color:rgba(4, 199, 199, 0.956);
+        }
+
+        body {
+            background-color: rgb(240, 227, 209);
+        }
+
+        .border {
+            border: 2px solid transparent;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            padding-left: 10px;
+            padding-right: 10px;
+            cursor: pointer;
+        }
+
+        .border:hover {
+            border: 2px solid orange;
+        }
+
+        .announcement {
+            height: 27px;
+            background-color: #9e0150;
+            width: 100%;
+            color: #fff;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        #announcement-text {
+            font-size: 14px;
+        }
+
+        .navbar {
+            position: absolute;
+            margin-right: 45%;
+            margin-left: 0;
+        }
+
+
+        .nav-options {
+            display: flex;
+            height: 28px;
+            list-style-type: none;
+            padding-top: 40px;
+        }
+
+        .option {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 11px;
+            padding-right: 11px;
+            margin: 20.1px;
+            font-size: 22px;
+            text-decoration: none;
+            color: black
+        }
+
+        .login {
+            position: absolute;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-left: 74%;
+            margin-right: 0;
+            padding-top: 30px;
+            font-size: 22px;
+        }
+
+        .nav-sign {
+            margin-right: 8px;
+            margin-left: 8px;
+        }
+
+        .search-icon {
+            margin-right: 8px;
+            margin-left: 8px;
+        }
+
+        .nav-cart {
+            margin-right: 8px;
+            margin-left: 8px;
+        }
+
+        .border1 {
+            border: 2px solid transparent;
+            padding-top: 13px;
+            padding-bottom: 13px;
+            padding-left: 14px;
+            padding-right: 14px;
+            cursor: pointer;
+        }
+
+        .border1:hover {
+            border: 2px solid orange;
+        }
+
+        .heading {
+            text-align: center;
+            font-size: 50px;
+            margin-top: 30px;
+        }
+
+        .platform {
+            position: absolute;
+            margin-top: 8%;
+            margin-right: 60%;
+            margin-left: 8%;
+            font-size: 30px;
+        }
+
+        .plat-text {
+            position: absolute;
+            margin-top: 12%;
+            margin-right: 5%;
+            margin-left: 45%;
+            font-size: 30px;
+        }
+
+        .our-mission {
+            position: relative;
+            margin-top: 40%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .mission-bgimage {
+            background-image: url("images/footer.png");
+            background-position: center;
+            height: 500px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .mission-text {
+            font-size: 30px;
+            text-align: center;
+            margin-right: 50%;
+            margin-left: 5%;
+            margin-top: 40px;
+            color: rgb(255, 255, 255);
+        }
+
+        .mission-text1 {
+            font-size: 25px;
+            text-align: center;
+            margin-right: 50%;
+            margin-left: 5%;
+            margin-top: 30px;
+            color: rgb(255, 252, 253);
+        }
+
+        .content {
+            position: absolute;
+
+        }
+
+        .mission-img {
+            position: absolute;
+            margin-left: 60%;
+            margin-top: 10%;
+        }
+
+        .old-img {
+            margin-top: 18px;
+            margin-left: 50%;
+            position: absolute;
+        }
+
+        .img {
+            margin: 10px;
+        }
+
+        .old-text {
+            margin-top: 35px;
+            margin-right: 53%;
+            position: absolute;
+            margin-left: 60px;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(207, 83, 11);
+        }
+
+
+        .heading1 {
+            text-align: left;
+            font-size: 70px;
+            margin-left: 30px;
+            margin-right: 50%;
+            color: white;
+            margin-top: 30px;
+        }
+
+        .heading2 {
+            text-align: right;
+            font-size: 70px;
+            margin-right: 100px;
+            margin-left: 50%;
+            color: rgb(15, 0, 0);
+            margin-top: 30px;
+        }
+
+        .fair-img {
+            margin-right: 50%;
+            margin-top: 80px;
+            margin-left: 80px;
+            position: absolute;
+        }
+
+        .fair-text {
+            margin-left: 55%;
+            color: rgb(2, 116, 2);
+            font-size: 20px;
+            margin-right: 40px;
+        }
+
+        .slider {
+            position: relative;
+            margin-top: 500px;
+            margin-left: 130px;
+            max-width: 1100px;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .navigation {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            outline: none;
+            font-size: 18px;
+        }
+
+        .imgsize {
+            height: 500px;
+            width: 1100px;
+        }
+
+        .footer-content {
+            position: absolute;
+            background-color: black;
+            width: 100%;
+            height: 300px;
+            justify-content: space-evenly;
+            color: white;
+        }
+
+        .footer-name {
+            position: absolute;
+            margin-top: 100px;
+            margin-left: 80px;
+            margin-bottom: 60px;
+        }
+
+        .contact-info {
+            position: absolute;
+            margin: 80px;
+            margin-top: 160px;
+        }
+
+        .quick-links {
+            position: absolute;
+            margin-left: 60%;
+            margin-top: 100px;
+        }
+
+        .footer-links {
+            list-style-type: none;
+            font-size: 18px;
+        }
+
+        .social-media {
+            position: absolute;
+            margin-left: 80%;
+            margin-top: 100px;
+        }
+
+        .copyright {
+            position: absolute;
+            margin-left: 40%;
+            margin-top: 270px;
+        }
+
+        .social {
+            color: rgb(94, 3, 94);
+            font-size: 18px;
+        }
+    </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="announcement">
+                <p id="announcement-text">10% off + free shipping on orders above Rs 5000</p>
+            </div>
+        </header>
+
+
+        <div class="nav">
+            <div class="navbar">
+                <ul class="nav-options">
+                    <li><a href="artisan.html" class="option border">Home</a></li>
+                    <li><a href="story.html" class="option border">Our Story</a></li>
+                    <li><a href="shop.html" rel="noopener"" class="option border">Shop</a></li>
+                    <li><a href="contactfinal.html" class="option border">Contact</a></li>
+                    <li><a href="offers.html" class="option border">Offers</a></li>
+                </ul>
+            </div>
+            <div class="login">
+            
+                <div class="nav-sign">
+                    <a href="signin.html" class="option1 border1">Login</a>
+                </div>
+            
+                <div class="search-icon border1">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+            
+                <div class="nav-cart border1">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <a href="returns.html" class="option1">Cart</a>
+                </div>
+            
+            </div>
+        </div>
+
+        <div class="platform">
+            <h1>An authentic platform for pure craft forms.</h1>
+        </div>
+
+        <div class="plat-text">
+            <p>CraftersCottage is a digital marketplace for some of the world's oldest and best craft forms. To promote
+                different crafts there is a need for a centralized hub that fosters a community of artisans, and
+                provides tools for effective marketing and collaboration. In the absence of such a platform, artisans
+                often struggle with the complexities of online commerce, hindering the growth of their businesses and
+                limiting the accessibility of authentic, handmade products to a global audience.
+            </p>
+        </div>
+
+        <div class="our-mission">
+            <div class="mission-bgimage">
+                <div class="content">
+                    <h3 class="heading">Our Mission</h3>
+                    <p class="mission-text">Embrace the timeless masterpieces created by India's Master Artisans</p>
+                    <p class="mission-text1">We seek to offer a fair-trade platform for handicraft products. Our primary
+                        aim is to support the handicraft workers from different parts of the country. Each design
+                        offered by us is a
+                        legacy for generations. We try to keep the different forms of art alive by by giving these
+                        products
+                        recognition on online marketplace.</p>
+                </div>
+                <div class="mission-img"><img src="images/mission.jpeg" alt="Artisan" height="300px" width="450px">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="old-craft">
+            <h1 class="heading">Celebrating world's oldest craft forms</h1>
+            <div class="old-img">
+                <img src="images/oldest.webp" alt="Oldest image1" height="350px" width="300px" class="img">
+                <img src="images/oldest1.webp" alt="Oldest image2" height="350px" width="300px" class="img">
+            </div>
+
+            <div class="old-text">
+                <p>Dhokra art(or Dokra art) is among one of the oldest traditional techniques of art form.The art is a
+                    non-ferrous metal casting technique known as lost-wax casting.In India, it is practiced for over
+                    4,000 years, said to date back to the era of the Indus Valley Civilisation.The lost wax technique or
+                    cire-perdue has been the medium of metal workers in Madhya Pradesh, Chhattisgarh, Orissa and West
+                    Bengal. Entirely handcrafted, the unique 13-stage process of Dhokra /Bell-metal making today, is an
+                    outcome of the original craft instinct handed down through the centuries. Dhokra or Bell metal is an
+                    alloy of brass, and other metals that impart an antique effect to the castings.</p>
+            </div>
+        </div>
+
+        <div class="our-mission">
+            <div class="mission-bgimage">
+                <div class="content">
+                    <h3 class="heading1">Supporting eco-friendly choices</h3>
+                    <p class="mission-text1">Creating awareness for craft is inextricably linked with promoting
+                        ecological choices with a few exceptions. The Indian crafts practitioner is perhaps the greatest
+                        conservationist who strives to live in harmony with his environment. While, we do our best to
+                        promote eco-friendly choices to the best extent possible, there are a few exceptions where
+                        helping livelihoods may take precedence, simply due to our commitment to help every craft form
+                        and every type of artisan from our hinterlands.</p>
+                    <p class="mission-text1"></p>
+                </div>
+                <div class="mission-img"><img src="images/eco.webp" alt="Artisan" height="300px" width="450px"></div>
+
+            </div>
+        </div>
+
+        <div class="fair-trade">
+            <div class="fair-img">
+                <img src="images/fair.jpg" alt="Image" height="380px" width="550px" class="img">
+            </div>
+
+            <div class="content">
+                <h1 class="heading2">Promoting Fair trade.</h1>
+
+                <div class="fair-text">
+                    <p>Ensuring fair prices that are mutually agreed with our artisans, while providing support with
+                        ideas and
+                        help to direct their immense talent in staying contemporary and relevant to a changing world.
+                        Our cost
+                        and price models are worked out equitably between us and our artisans. Our partners and
+                        associates work
+                        tirelessly to assist artisans in increasing their skills and improving their practices through
+                        assistance with production methods, working conditions, business practices and product
+                        development. We
+                        endeavour to provide all our partners, artisans and craftsmen access to a larger marketplace and
+                        a
+                        fairer price for their products, not just by promoting what they make, but also by helping them
+                        with
+                        ideas and designs to innovate and create relevant craft products that appeal to changing tastes
+                        and
+                        modern preferences, to help them find wider markets.</p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="images/pic1.jpg" class="imgsize" alt="Slide 1"></div>
+                <div class="slide"><img src="images/pic2.jpg" class="imgsize" alt="Slide 2"></div>
+                <div class="slide"><img src="images/pic3.jpg" class="imgsize" alt="Slide 3"></div>
+                <div class="slide"><img src="images/pic4.jpg" class="imgsize" alt="slide 4"></div>
+                <div class="slide"><img src="images/pic5.jpg" class="imgsize" alt="slide 5"></div>
+
+            </div>
+
+            <div class="navigation">
+                <button class="prev" onclick="prevSlide()">&#10094; </button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+            </div>
+        </div>
+        <br><br>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-name">
+                    <h3>CraftersCottage</h3>
+                </div>
+                <div class="contact-info">
+                    <p>123 Main Street,Delhi,India</p>
+                    <p>Phone: +91 (5678890987)</p>
+                    <a href="mailto:craftcottage12@gmail.com">craftcottage12@gmail.com</a>
+                </div>
+                <div class="quick-links">
+                    <ul class="footer-links">
+                        <li><a href="">Our Story</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <p class="social">Social-Media</p>
+                    <ul class="footer-links">
+                        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook <i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                        <li><a href="https://twitter.com/" target="_blank" rel="noopener">Twitter <i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram <i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">Linkedin <i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.pinterest.com/" target="_blank" rel="noopener">Pinterest <i class="fa fa-pinterest-square" aria-hidden="true"></i></a></li>
+                    </ul>
+            
+                </div>
+                <div class="copyright">
+                <p>&copy; 2023 CraftersCottage. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <script>
+            let currentSlide = 0;
+          
+            function showSlide(index) {
+              const slides = document.querySelector('.slides');
+              const slideWidth = document.querySelector('.slide').clientWidth;
+          
+              if (index < 0) {
+                currentSlide = slides.childElementCount - 1;
+              } else if (index >= slides.childElementCount) {
+                currentSlide = 0;
+              } else {
+                currentSlide = index;
+              }
+          
+              slides.style.transform = `translateX(${-currentSlide * slideWidth}px)`;
+            }
+          
+            function nextSlide() {
+              showSlide(currentSlide + 1);
+            }
+          
+            function prevSlide() {
+              showSlide(currentSlide - 1);
+            }
+          </script>
+
+          
+    </body>
+
+</html>

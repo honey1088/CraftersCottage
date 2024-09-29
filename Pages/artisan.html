@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CraftersCottage</title>
+    <link rel="stylesheet" href="../style1.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css"> 
+</head>
+<style>
+    
+</style>
+<body>
+    <header>
+        <div class="announcement">
+            <p id="announcement-text">10% off + free shipping on orders above Rs 5000</p>
+        </div>
+    </header>
+    <!----------------------------------------Nav options with background image------------------------------------->
+    <div class="navbar">
+        <div class="nav-img">
+            <ul class="nav-options">
+                <li><a href="artisan.html" class="option border">Home</a></li>
+                <li><a href="story.html" class="option border">Our Story</a></li>
+                <li><a href="shop.html" class="option border">Shop</a></li>
+                <li><a href="contactfinal.html" class="option border">Contact</a></li>
+                <li><a href="offers.html" class="option border">Offers</a></li>
+            </ul>
+            <a href="artisan.html"><img src="images/logo.png" alt="CraftersCottage" class="logo"></a>
+            <div class="nav-text">
+                <h2>Artisanal Treasures for a Dinstinctive Lifestyle.</h2>
+                <p>We believe that every creation is a piece of art, meticulously crafted with passion and
+                    dedication.CraftersCottage is more than just a collection of handmade products; it's a celebration of
+                    creativity, skill, and the joy of creating something extraordinary from the ordinary.Step into a world
+                    where handmade meets heartmade, and each product tells a story of artistry and individuality.</p>
+            </div>
+            <div class="shop-button">
+                <a href="shop.html"><button class="button">Shop Now</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------Login, search, return ,cart-------------------------------------->
+    <div class="login">
+            
+        <div class="nav-sign">
+            <a href="signin.html" class="option1 border1">Login</a>
+        </div>
+    
+        <div class="search-icon border1">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    
+        <div class="nav-cart border1">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <a href="returns.html" class="option1">Cart</a>
+        </div>
+    
+    </div>
+
+    <!-----------------------------------------------Image Slideshow div----------------------------------------------> 
+    <div class="slideshow-container">
+        <div class="slides">
+            <img src="images/slideshow/image1.webp" alt="Image 1" class="Slide-images">
+        </div>
+        <div class="slides">
+            <img src="images/slideshow/image2.webp" alt="Image 2" class="Slide-images">
+        </div>
+        <div class="slides">
+            <img src="images/slideshow/image3.webp" alt="Image 3" class="Slide-images">
+        </div>
+        <div class="slides">
+            <img src="images/slideshow/image4.webp" alt="Image 4" class="Slide-images">
+        </div>
+        <div class="slides">
+            <img src="images/slideshow/image5.webp" alt="Image 5" class="Slide-images">
+        </div>
+        <div class="slides">
+            <img src="images/slideshow/image6.webp" alt="Image 6" class="Slide-images">
+        </div>
+        <div class="slides">
+            <img src="images/slideshow/image7.webp" alt="Image 7" class="Slide-images">
+        </div>
+        <div class="slides">
+            <img src="images/slideshow/image8.webp" alt="Image 8" class="Slide-images">
+        </div>
+        <div class="slides">
+            <img src="images/slideshow/image9.webp" alt="Image 9" class="Slide-images">
+        </div>
+        <div class="slides">
+            <img src="images/slideshow/image10.webp" alt="Image 10" class="Slide-images">
+        </div>
+        <div class="slides">
+            <img src="images/slideshow/image11.webp" alt="Image 11" class="Slide-images">
+        </div>
+        <div class="slides">
+            <img src="images/slideshow/image12.webp" alt="Image 12" class="Slide-images">
+        </div>
+        <div class="slides">
+            <img src="images/slideshow/image13.webp" alt="Image 13" class="Slide-images">
+        </div>
+        <div class="slides">
+            <img src="images/slideshow/image14.webp" alt="Image 14" class="Slide-images">
+        </div>
+        <div class="slides">
+            <img src="images/slideshow/image15.webp" alt="Image 15" class="Slide-images">
+        </div>
+    
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+<!-------------------------------------- Script for image slider ------------------------------------>
+    <script>
+        var slideIndex=1;
+        var slideInterval=setInterval(function() { plusSlides(1); }, 2000);
+        function showSlides(n) 
+        {
+            clearInterval(slideInterval);
+            var i;
+            var slides=document.getElementsByClassName("slides");
+
+            if (n>slides.length) 
+            {
+                slideIndex=1;
+            }
+
+            if (n<1) 
+            {
+                slideIndex=slides.length;
+            }
+
+            for (i=0;i<slides.length;i++) 
+            {
+                slides[i].style.display="none";
+            }
+
+            slides[slideIndex-1].style.display="block";
+            slideInterval=setInterval(function() { plusSlides(1); }, 2000);
+        }
+
+        function plusSlides(n) 
+        {
+            showSlides(slideIndex+=n);
+        }
+        showSlides(slideIndex);
+    </script>
+
+    <!-------------------------------------------------New Arrivals section--------------------------------------------->
+    <div class="new-arrivals">
+        <h1 class="heading">New Arrivals</h1>
+        <p class="new-text">Have a look at the latest arrivals at our virtual store.</p>
+        <div class="new-content">
+            <figure>
+                <a><img src="images/new-arrivals/new1.jpeg" alt="Image1" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Exclusive Handwoven Kilim Rug</figcaption>
+                <span class="price">&#8377 20,000</span>
+            </figure>
+            <figure>
+                <a><img src="images/new-arrivals/new2.jpg" alt="Image2" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Bidri craft - Jug</figcaption>
+                <span class="price">&#8377 3,500</span>
+            </figure>
+            <figure>
+                <a><img src="images/new-arrivals/new3.jpg" alt="Image3" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Baby Ganesha(Brass)</figcaption>
+                <span class="price">&#8377 3,400</span>
+            </figure>
+            <figure>
+                <a><img src="images/new-arrivals/new4.jpg" alt="Image4" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Enchanting Reflection Mirror</figcaption>
+                <span class="price">&#8377 17,398</span>
+            </figure>
+        </div>
+
+        <div class="new-content">
+            <figure>
+                <a><img src="images/new-arrivals/new5.jpg" alt="Image5" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Graceful Krishna Sculpture(Brass)</figcaption>
+                <span class="price">&#8377 1,630</span>
+            </figure>
+            <figure>
+                <a><img src="images/new-arrivals/new6.webp" alt="Image6" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Bastar tribe Men Candle Holder</figcaption>
+                <span class="price">&#8377 1,100</span>
+            </figure>
+            <figure>
+                <a><img src="images/new-arrivals/new7.webp" alt="Image7" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Zardozi and Resham Embroided Potli Bag</figcaption>
+                <span class="price">&#8377 2,000</span>
+            </figure>
+            <figure>
+                <a><img src="images/new-arrivals/new8.jpeg" alt="Image8" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Coconut Craft Table Lamp</figcaption>
+                <span class="price">&#8377 1,540</span>
+            </figure>
+        </div>
+
+        <div class="new-content">
+            <figure>
+                <a><img src="images/new-arrivals/new9.jpg" alt="Image9" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Gilded Memories Photo Frame</figcaption>
+                <span class="price">&#8377 2,500</span>
+            </figure>
+            <figure>
+                <a><img src="images/new-arrivals/new10.jpg" alt="Image10" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Elegance Marble Desk Organiser with Clock</figcaption>
+                <span class="price">&#8377 2,100</span>
+            </figure>
+            <figure>
+                <a><img src="images/new-arrivals/new11.jpg" alt="Image11" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Galactic Grace Table Lamp</figcaption>
+                <span class="price">&#8377 1,540</span>
+            </figure>
+            <figure>
+                <a><img src="images/new-arrivals/new12.jpg" alt="Image12" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Shaandaar Kutch Weave Shawl</figcaption>
+                <span class="price">&#8377 3,302</span>
+            </figure>
+        </div>
+        <div class="new-view">
+            <a href="newarrivals.html"><button class="button">View More</button></a>
+        </div>
+    </div>
+
+    <!---------------------------------------------------Explore section---------------------------------------------->
+    <div class="explore">
+        <p class="explore-text">Explore our complete range <br>of craft works</p>
+        <a class="explore-learn">Learn More</a>
+        <div class="explore-craft">
+            <span>20+</span><br>
+            <span id="span2">CRAFT FORMS</span>
+        </div>
+    </div>
+
+    <!-----------------------------------------------------Choice for season--------------------------------------------->
+    <div class="season">
+        <h1 class="heading1">Choices for<br>the season</h1>
+        <div class="season-view">
+            <a href="season.html"><button class="button">View All</button></a>
+        </div>
+        <p class="season-text">For Women</p>
+        
+        <div class="new-content">
+            <figure>
+                <a><img src="images/season/women1.webp" alt="Image1" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Bagru Block Printed & Running Stitch Kurta & Pants</figcaption>
+                <span class="price">&#8377 2,900</span>
+            </figure>
+            <figure>
+                <a><img src="images/season/women2.webp" alt="Image2" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Traditional Silver Masoli Toe Rings(Pure Silver, Set of 2)</figcaption>
+                <span class="price">&#8377 3,500</span>
+            </figure>
+            <figure>
+                <a><img src="images/season/women3.webp" alt="Image3" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Dabu Block Printed Chanderi Saree</figcaption>
+                <span class="price">&#8377 4,300</span>
+            </figure>
+            <figure>
+                <a><img src="images/season/women4.webp" alt="Image4" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Zardozi and Resham Embroided Potli Bags</figcaption>
+                <span class="price">&#8377 1,900</span>
+            </figure>
+        </div>
+
+        <div class="new-content">
+            <figure>
+                <a><img src="images/season/women5.webp" alt="Image5" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Traditional Maharashtrian Kadhas</figcaption>
+                <span class="price">&#8377 90,630</span>
+            </figure>
+            <figure>
+                <a><img src="images/season/women6.webp" alt="Image6" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Handknotted Crochet Tote Bag</figcaption>
+                <span class="price">&#8377 2,100</span>
+            </figure>
+            <figure>
+                <a><img src="images/season/women7.webp" alt="Image7" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Sterling Silver Filigree Earrings</figcaption>
+                <span class="price">&#8377 7,800</span>
+            </figure>
+            <figure>
+                <a><img src="images/season/women8.webp" alt="Image8" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Handknotted Crochet Small Hand Bag</figcaption>
+                <span class="price">&#8377 1,540</span>
+            </figure>
+        </div>
+    </div>
+
+    <div class="season">
+        <h1 class="heading1">Collection for Men</h1>
+        <div class="season-view">
+            <a href="menscollection.html"><button class="button">View All</button></a>
+        </div>
+        <p class="season-text">For Men</p>
+        <div class="new-content">
+            <figure>
+                <a><img src="images/season/men1.webp" alt="Image1" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Hand Stitched Leather Cross Body Bag</figcaption>
+                <span class="price">&#8377 3,460</span>
+            </figure>
+            <figure>
+                <a><img src="images/season/men2.webp" alt="Image2" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Tie & Dye Cotton Shirt - Olive</figcaption>
+                <span class="price">&#8377 1,200</span>
+            </figure>
+            <figure>
+                <a><img src="images/season/men3.webp" alt="Image3" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Summer Shirt - Cotton Block Printed</figcaption>
+                <span class="price">&#8377 1000</span>
+            </figure>
+            <figure>
+                <a><img src="images/season/men4.webp" alt="Image4" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Bidri Craft Cufflinks - Flora</figcaption>
+                <span class="price">&#8377 1,300</span>
+            </figure>
+        </div>
+
+        <div class="new-content">
+            <figure>
+                <a><img src="images/season/men5.webp" alt="Image5" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Handcrafted Leather Cross Body Bag with Hand Stitch</figcaption>
+                <span class="price">&#8377 2,520</span>
+            </figure>
+            <figure>
+                <a><img src="images/season/men6.webp" alt="Image6" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Rugged Leather Duffle Bag</figcaption>
+                <span class="price">&#8377 5,800</span>
+            </figure>
+            <figure>
+                <a><img src="images/season/men7.webp" alt="Image7" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Summer Shirt - Cotton Block Printed</figcaption>
+                <span class="price">&#8377 980</span>
+            </figure>
+            <figure>
+                <a><img src="images/season/men8.webp" alt="Image8" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Handcrafted Leather Cross Body Bag</figcaption>
+                <span class="price">&#8377 2,440</span>
+            </figure>
+        </div>
+    </div>
+
+    <!--------------------------------Hndicrafted Home decors---------------------------------->
+    <div class="season">
+        <h1 class="heading1">Handcrafted Home<br>Decor Items</h1>
+        <div class="season-view">
+            <a href="homedecor.html"><button class="button">View All</button></a>
+        </div>
+        <p class="season-text">For Home</p>
+        
+        <div class="new-content">
+            <figure>
+                <a><img src="images/season/home1.webp" alt="Image1" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Coconut Craft Table Lamp</figcaption>
+                <span class="price">&#8377 1,540</span>
+            </figure>
+            <figure>
+                <a><img src="images/season/home2.webp" alt="Image2" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Kashmiri Crewel Work Velvet Cushion Covers(Set of 3)</figcaption>
+                <span class="price">&#8377 2,750</span>
+            </figure>
+            <figure>
+                <a><img src="images/season/home3.webp" alt="Image3" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Brass Moulded Curio - Ornate Camphor Spoon</figcaption>
+                <span class="price">&#8377 1,830</span>
+            </figure>
+            <figure>
+                <a><img src="images/season/home4.webp" alt="Image4" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Handcrafted Wooden Dominoes Game with Box</figcaption>
+                <span class="price">&#8377 1,300</span>
+            </figure>
+        </div>
+
+        <div class="new-content">
+            <figure>
+                <a><img src="images/season/home5.webp" alt="Image5" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Coconut Craft Tea Cups(Set of 6)</figcaption>
+                <span class="price">&#8377 1,810</span>
+            </figure>
+            <figure>
+                <a><img src="images/season/home6.webp" alt="Image6" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Handcrafted Jaaliwork Wooden Lamp</figcaption>
+                <span class="price">&#8377 4,450</span>
+            </figure>
+            <figure>
+                <a><img src="images/season/home7.webp" alt="Image7" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Kashida Pattu Woven Cushion Covers(Set of 2)</figcaption>
+                <span class="price">&#8377 1,620</span>
+            </figure>
+            <figure>
+                <a><img src="images/season/home8.webp" alt="Image8" class="new-images" width="240px" height="300px"></a>
+                <figcaption class="obj-name">Wooden Decorative Utility Box</figcaption>
+                <span class="price">&#8377 2,890</span>
+            </figure>
+        </div>
+    </div>
+
+
+    <!--------------------------------------------------Old Craft form----------------------------------------------->
+    <div class="old-craft">
+        <h1 class="heading">Get the World's oldest craft form</h1>
+        <div class="old-img">
+            <img src="images/oldest.webp" alt="Oldest craft form" height="350px" width="300px" class="img">
+            <img src="images/oldest1.webp" alt= "Oldest craft form" height="350px" width="300px" class="img">
+        </div>
+
+        <div class="old-text">
+            <p>Dhokra art(or Dokra art) is among one of the oldest traditional techniques of art form.The art is a non-ferrous metal casting technique known as lost-wax casting.In India, it is practiced for over 4,000 years, said to date back to the era of the Indus Valley Civilisation.The lost wax technique or cire-perdue has been the medium of metal workers in Madhya Pradesh, Chhattisgarh, Orissa and West Bengal. Entirely handcrafted, the unique 13-stage process of Dhokra /Bell-metal making today, is an outcome of the original craft instinct handed down through the centuries. Dhokra or Bell metal is an alloy of brass, and other metals that impart an antique effect to the castings.</p>
+        </div>
+        <div class="old-view">
+            <a href="dhokra.html"><button class="button">Know More</button></a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-name">
+                <h3>CraftersCottage</h3>
+            </div>
+            <div class="contact-info">
+                <p>123 Main Street,Delhi,India</p>
+                <p>Phone: +91 (5678890987)</p>
+                <a href="mailto:craftcottage12@gmail.com">craftcottage12@gmail.com</a>
+            </div>
+            <div class="quick-links">
+                <ul class="footer-links">
+                    <li><a href="">Our Story</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <p class="social">Social-Media</p>
+                <ul class="footer-links">
+                    <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook <i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/" target="_blank" rel="noopener">Twitter <i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram <i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">Linkedin <i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.pinterest.com/" target="_blank" rel="noopener">Pinterest <i class="fa fa-pinterest-square" aria-hidden="true"></i></a></li>
+                </ul>
+        
+            </div>
+            <div class="copyright">
+            <p>&copy; 2023 CraftersCottage. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

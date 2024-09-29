@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shopping Cart</title>
+    <link rel="stylesheet" href="../style1.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    </head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            color: #fff;
+            padding: 10px;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: black;
+            
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .checkout-btn {
+            display: block;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .imagesize{
+            height:100px;
+            width:100px;
+        }
+        .background{
+            background-color: antiquewhite;
+        }
+        .navbar{
+    position: absolute;
+    margin-right: 45%;
+    margin-left:0;
+        }
+
+
+
+
+.nav-options{
+    display: flex;
+    height: 28px;
+    list-style-type: none;
+    padding-top: 40px;
+}
+
+.option{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 11px;
+    padding-right: 11px;
+    margin: 20.1px;
+    font-size: 22px;
+    text-decoration: none;
+    color:black;
+}
+
+
+
+    </style>
+    <header>
+        <div class="announcement">
+            <p id="announcement-text">10% off + free shipping on orders above Rs 5000</p>
+        </div>
+    </header>
+    <div class="navbar">
+        <ul class="nav-options">
+            <li><a href="artisan.html" class="option border">Home</a></li>
+            <li><a href="ourstory.html" class="option border">Our Story</a></li>
+            <li><a href="shop.html" class="option border">Shop</a></li>
+            <li><a href="contactfinal.html" class="option border">Contact</a></li>
+            <li><a href="offers.html" class="option border">Offers</a></li>
+        </ul>
+ </div>
+ <div class="login">
+    <div class="nav-sign border1">
+        <a href="signin.html">Login</a>
+    </div>
+
+    <div class="search-icon border1">
+        <i class="fa fa-search" aria-hidden="true"></i>
+    </div>
+
+    <div class="nav-cart border1">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        <a href="returns.html">Cart</a>
+    </div>
+</div>
+
+ 
+<br>
+<br>
+<br>
+<br>
+<h1>My Cart</h1>
+
+
+<body class="background">
+
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="images/slideshow/image1.webp" alt="Image1" class="imagesize"></td>
+                    <td>&#8377 700</td>
+                    <td>2</td>
+                    <td>&#8377 1400</td>
+                </tr>
+                <tr>
+                    <td><img src="images/slideshow/image2.webp" alt="Image2" class="imagesize"></td>
+                    <td>&#8377 1600</td>
+                    <td>1</td>
+                    <td>&#8377 1600</td>
+                </tr>
+                <tr>
+                    <td><img src="images/slideshow/image3.webp" alt="Image3" class="imagesize"></td>
+                    <td>&#8377 450</td>
+                    <td>1</td>
+                    <td>&#8377 450</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <a href="payment.html" class="checkout-btn">Proceed to Payment</a>
+    </section>
+</body>
+</html>
+
