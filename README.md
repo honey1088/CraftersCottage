@@ -7,7 +7,7 @@ CraftersCottage is an e-commerce web application that showcases handcrafted prod
 This project was part of my initial web development practice. The focus was on building a simple and user-friendly interface. It helped me understand how to structure web pages and style them effectively. The project files are mainly located inside the Pages folder along with images for different products too.
 
 ## Features
-- 🛍Product listings for handcrafted items
+- Product listings for handcrafted items
 - Product detail view
 - Lightweight frontend for smooth performance
 - Modular folder structure for scalable development
